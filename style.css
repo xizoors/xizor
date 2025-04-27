@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+body{
+    background-image: linear-gradient(to right ,#042c3f 30%,#000);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    background-image: 
+    linear-gradient(to right,#0b576e,#00000062) , url(4.png);
+    background-size: cover;
+    background-position: center;
+    width: 80%;
+    height: 80%;
+    border-radius: 20px;
+}
+.container:hover{
+    background-image: 
+    linear-gradient(to right,#0b576e,transparent) , url(4.png);
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+}
+.logo{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 40px;
+    width: fit-content;
+    transition: 0.5s;
+}
+.logo:hover{
+    color: #0faae7;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    width: 50%;
+}
+ul a{
+    border-bottom: solid 2px transparent;
+    transition: 0.37s;
+}
+ul a:hover , .active{
+    border-color: #0faae7;
+    color: #0faae7;
+    font-size: 18px;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 50%;
+    height: 80%;
+    gap: 20px;
+}
+h1{
+    color: white;
+    letter-spacing: 1.5px;
+    font-size: 60px;
+    padding: 5px;
+    margin: 5px 20px;
+}
+p{
+   color: white;
+   font-size: 18px;
+   letter-spacing: 1.5px;
+   padding: 5px;
+   margin: 5px 20px;
+   transition: 0.5s;
+}
+p:hover{
+    color: #0faae7;
+}
+.button{
+   color: black;
+   font-size: 30px;
+   font-weight: 700;
+   width: fit-content;
+   padding: 8px 10px;
+   margin: 26px;
+   background: white;
+   border-radius: 12px;
+   border: solid 2px white;
+}
+.button:hover{
+    border-color: #0faae7;
+    background: transparent;
+    color: #0faae7;
+    cursor: pointer;
+    text-shadow: 0 0 20px #0faae7;
+    box-shadow: 0 0 20px #0faae7;
+}
+@media (max-width: 600px){
+    .head{
+        justify-content: center;
+        flex-direction: column;
+        gap: 15px;
+    }
+    h1{
+        font-size: 30px;
+        padding: 3px;
+        margin: 3px 20px;
+    }
+    p{
+        font-size: 15px;
+        padding: 3px;
+        margin: 3px 20px;
+    }
+    .button{
+        font-size: 25px;
+    }
+}
